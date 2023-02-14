@@ -53,6 +53,8 @@ Run `npm start` to start your server
 
 #### Env Variables
 
+Environment variables are variables that are set in the operating system's environment, which can be accessed and used by programs or scripts running on the system. They contain information such as system paths, login information, or custom configuration data, and can be used to configure or modify program behavior at runtime. They are often used to store sensitive information like API keys or database credentials, as well as for platform-specific configuration.
+
 To use dotenv in a TypeScript Node.js project, you can follow these steps:
 
 Install dotenv and @types/dotenv as dev dependencies using the following command:
@@ -72,7 +74,6 @@ DB_PASSWORD=mypassword
 DB_NAME=mydatabase
 
 ```
-
 
 In your TypeScript file, import dotenv and call the config method to load the environment variables from the .env file:
 
