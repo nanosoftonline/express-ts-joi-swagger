@@ -59,9 +59,6 @@ In your package.json, add the following scripts:
 Run `npm start` to start your server
 
 
-#### What are we building?
-
-
 #### Env Variables
 
 Environment variables are variables that are set in the operating system's environment, which can be accessed and used by programs or scripts running on the system. They contain information such as system paths, login information, or custom configuration data, and can be used to configure or modify program behavior at runtime. They are often used to store sensitive information like API keys or database credentials, as well as for platform-specific configuration.
