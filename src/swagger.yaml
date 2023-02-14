@@ -1,0 +1,119 @@
+openapi: "3.0.0"
+info:
+  title: "Campaign Management API"
+  version: "1.0.0"
+paths:
+  /campaign:
+    get:
+      summary: Get all campaigns
+      tags:
+        - campaign
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Campaign"
+    post:
+      summary: Create a new campaign
+      tags:
+        - campaign
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CampaignInput"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Campaign"
+  /campaign/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: ID of the campaign to retrieve or update
+        schema:
+          type: integer
+    get:
+      summary: Get a campaign by ID
+      tags:
+        - campaign
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Campaign"
+    put:
+      summary: Update a campaign by ID
+      tags:
+        - campaign
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CampaignInput"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Campaign"
+    delete:
+      summary: Delete a campaign by ID
+      tags:
+        - campaign
+      responses:
+        "204":
+          description: No Content
+components:
+  schemas:
+    Campaign:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        start_date:
+          type: string
+          format: date
+        end_date:
+          type: string
+          format: date
+        budget:
+          type: number
+      required:
+        - name
+        - start_date
+        - end_date
+        - budget
+    CampaignInput:
+      type: object
+      properties:
+        name:
+          type: string
+        start_date:
+          type: string
+          format: date
+        end_date:
+          type: string
+          format: date
+        budget:
+          type: number
+      required:
+        - name
+        - start_date
+        - end_date
+        - budget
