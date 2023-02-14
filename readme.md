@@ -3,7 +3,7 @@ In this project, we will be building a RESTful API using Node.js, Express, and P
 
 We will use TypeScript for type checking and advanced features, and we will use Joi for input validation to ensure that the data being passed to the API is valid and safe.
 
-To ensure the API is robust, scalable, and secure, we will implement features like user authentication, data validation, error handling. We will use PostgreSQL to store campaign data.
+To ensure the API is robust, scalable, and secure, we will implement features like data validation and error handling. We will use PostgreSQL to store campaign data.
 
 We will also use Swagger to generate documentation for the API, making it easy for other developers to consume our API from other programming languages or platforms.
 
