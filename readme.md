@@ -114,8 +114,6 @@ const pool = new Pool({
 #### Routes
 To create a campaign router file for an Express server, this router file will keep all our campaign routes:
 
-*A campaign is a series of planned activities or efforts aimed at achieving a specific goal or objective, often used in the context of marketing.*
-
 In your src directory, create a new folder called routes, and inside this folder create a campaign.ts file.
 
 ```TypeScript
