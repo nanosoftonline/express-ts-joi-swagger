@@ -1,4 +1,11 @@
-### Express Typescript and Joi
+### Express Typescript,  Joi and Swagger
+In this project, we will be building a RESTful API using Node.js, Express, and PostgreSQL for a campaign management system. The API will expose several endpoints for creating, reading, updating, and deleting campaigns and campaign-related data.
+
+We will use TypeScript for type checking and advanced features, and we will use Joi for input validation to ensure that the data being passed to the API is valid and safe.
+
+To ensure the API is robust, scalable, and secure, we will implement features like user authentication, data validation, error handling. We will use PostgreSQL to store campaign data.
+
+We will also use Swagger to generate documentation for the API, making it easy for other developers to consume our API from other programming languages or platforms.
 
 #### Setup
 To scaffold a Node project for Express and TypeScript, you can follow these steps:
@@ -50,6 +57,10 @@ In your package.json, add the following scripts:
 ```
 
 Run `npm start` to start your server
+
+
+#### What are we building?
+
 
 #### Env Variables
 
