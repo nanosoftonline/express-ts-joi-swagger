@@ -1,4 +1,4 @@
-### Express Typescript,  Joi and Swagger
+## Express Typescript,  Joi and Swagger
 In this project, we will be building a RESTful API using Node.js, Express, and PostgreSQL for a campaign management system. The API will expose several endpoints for creating, reading, updating, and deleting campaigns and campaign-related data.
 
 We will use TypeScript for type checking and advanced features, and we will use Joi for input validation to ensure that the data being passed to the API is valid and safe.
@@ -7,7 +7,7 @@ To ensure the API is robust, scalable, and secure, we will implement features li
 
 We will also use Swagger to generate documentation for the API, making it easy for other developers to consume our API from other programming languages or platforms.
 
-#### Setup
+### Setup
 To scaffold a Node project for Express and TypeScript, you can follow these steps:
 
 * Install Node.js and TypeScript if you haven't already.
@@ -43,7 +43,7 @@ app.listen(3000, () => {
 
 
 
-#### Scripts
+### Scripts
 In your package.json, add the following scripts:
 
 
@@ -59,7 +59,7 @@ In your package.json, add the following scripts:
 Run `npm start` to start your server
 
 
-#### Env Variables
+### Env Variables
 
 Environment variables are variables that are set in the operating system's environment, which can be accessed and used by programs or scripts running on the system. They contain information such as system paths, login information, or custom configuration data, and can be used to configure or modify program behavior at runtime. They are often used to store sensitive information like API keys or database credentials, as well as for platform-specific configuration.
 
@@ -111,7 +111,7 @@ const pool = new Pool({
 
 ```
 
-#### Routes
+### Routes
 To create a campaign router file for an Express server, this router file will keep all our campaign routes:
 
 In your src directory, create a new folder called routes, and inside this folder create a campaign.ts file.
@@ -210,7 +210,7 @@ export default router;
 ```
 
 
-#### Input Validation with Joi
+### Input Validation with Joi
 
 Here's an updated version of the Express router that includes input validation using Joi:
 
@@ -316,7 +316,7 @@ export default router;
 ```
 
 
-#### Document API with Swagger
+### Document API with Swagger
 Swagger (now called OpenAPI) is used to describe and document APIs. It provides a standardized way to define the structure, endpoints, operations, and parameters of an API.
 
 To add Swagger to this router, you can use a package like **swagger-ui-express** along with a Swagger specification file. Here are the basic steps:
